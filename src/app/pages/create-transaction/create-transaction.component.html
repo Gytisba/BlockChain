@@ -33,7 +33,9 @@
 	<button (click)="createTransaction()" type="submit" class="btn btn-primary" > Sign & create transaction</button>
 	
 
-
+		<button class="btn btn-primary" *ngIf="pendingTransactions.length > 0 && miningInProgress === false" (click)="minePendingTransactions()">
+		Verify
+   </button>
 
 	
 </div>
