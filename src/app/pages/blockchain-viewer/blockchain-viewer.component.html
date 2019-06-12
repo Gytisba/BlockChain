@@ -1,6 +1,6 @@
 <div class="container">
-	<h1>Blocks on chain</h1>
-	<p>Each card represents a block on the chain. Click on a block to see the transactions stored inside.</p>
+	<h1>Votes on blockchain</h1>
+	<p>Each block represents a vote on the chain. Click on a block to see the votes stored inside.</p>
 </div>
 
 <div class="container" style="overflow-x: scroll;white-space: nowrap;">
@@ -15,7 +15,7 @@
 <br><br>
 
 <div class="container">
-	<h1>Transactions inside block {{ getBlockNumber(selectedBlock) }}</h1>
+		<h1>Votes inside Block {{ getBlockNumber(selectedBlock) }}</h1>
 
 	<app-transactions-table
 		[transactions]="selectedBlock.transactions"
