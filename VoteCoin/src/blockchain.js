@@ -201,7 +201,7 @@ class Blockchain {
    * @returns {number} The balance of the wallet
    */
   getBalanceOfAddress(address) {
-    let balance = 0;
+    let balance = 1;
 
     for (const block of this.chain) {
       for (const trans of block.transactions) {
