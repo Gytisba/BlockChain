@@ -6,7 +6,7 @@
       <th scope="col">#</th>
       <th scope="col">From</th>
       <th scope="col">To</th>
-      <th scope="col">Amount</th>
+      
       <th scope="col">Timestamp</th>
       <th scope="col">Valid?</th>
     </tr>
@@ -31,10 +31,7 @@
             <br><small>(That's yours!)</small>
           </span>
       </td>
-      <td>
-        {{tx.amount}}
-        <span *ngIf="tx.fromAddress === null" class="text-muted"><br><small>(Block reward)</small></span>
-      </td>
+   
       <td>
         {{tx.timestamp}}<br>
         <span class="text-muted"><small>{{tx.timestamp |date:'MMM d, y, HH:mm'}}</small></span>

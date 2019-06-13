@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" routerLink="/">
     <img src="assets/img/logo-savjee.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-    &nbsp;SavjeeCoin
+    &nbsp;Elections
   </a>
 
   <div>
@@ -10,7 +10,18 @@
       <span class="badge badge-light">{{blockchain.pendingTransactions.length}}</span>
     </button>
     &nbsp;
-  
+      &nbsp;
+    <button routerLink="/wallet/Tom Burgerman" class="btn btn-outline-light">
+      Tom Burgerman
+    </button>
+    &nbsp;
+    <button routerLink="/wallet/Fiona Alanova" cssclass="Button" class="btn btn-outline-light">
+      Fiona Alanova
+    </button>
+    &nbsp;
+    <button routerLink="/wallet/Pavel Makintov" cssclass="Button"  class="btn btn-outline-light">
+      Pavel Makintov
+    </button>
     &nbsp;
     <button routerLink="/new/transaction" class="btn btn-outline-light">
       Vote
@@ -23,7 +34,7 @@
 <div class="container" *ngIf="showInfoMessage === true">
   <div class="alert alert-primary alert-dismissible fade show" role="alert">
     <h4 class="alert-heading">First things first.</h4>
-    This tool gives you the ability to look behind-the-scenes of a blockchain. You can create transactions, mine blocks and see how they all work together. Go ahead, make some transactions, mine a block, tweak the settings and see the effects of your actions in real-time.
+    This is an Lithuania President election system.
     <hr>
     
     <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="dismissInfoMessage()">
